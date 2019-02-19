@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css?family=Mali");
+
+body{
+  background: url(img/fondo_estrella.png);
+  font-family: "mali";
+  font-size: 25px;
+}
+.encabezado{
+  background-color: #fff;
+  text-align: center;
+  margin: 25px;
+  padding: 30px;
+}
+/*secciones*/
+#sectionHome{
+  margin: 100px;
+}
+.titulo h1{
+  font-size: 100px;
+}
+
+#sectionCategory, #preguntas, #resultados{
+  font-size: center;
+
+}
+.boxAnimals{
+  text-align: center;
+}
+.boxFamily{
+  /*outline: 1px solid red;*/
+  text-align: center;
+}
+h1{
+  text-align: center;
+  color: #fff;
+}
+
+p{
+  text-align: center;
+  color: #fff;
+}
+
+h2{
+  text-align: center;
+  color: #fff;
+}
+
+form{
+  text-align: center;
+  color: #fff;
+}
+
+.botonReady{
+  text-align: center;
+}
+.preguntas{
+  text-align: right;
+}
+.boxCategoria{
+  margin: 10px auto;
+  display: block;
+}
+.titleCategoria{
+  text-align: center;
+}

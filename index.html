@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>English for kids</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<!--HOME-->
+
+<body>
+  <!--cuadro de encabezado-->
+  <div class="encabezado">
+    <img src="img/LOGO-trivia.png" alt="">
+  </div>
+
+  <section id="sectionHome">
+    <div class="titulo">
+
+      <h1>Bienvenidos</h1>
+      <p>Aprende Inglés facil <br> con tu trivia favorita</p>
+    </div>
+
+    <form class="myForm" action="index.html" method="post" id="firtsName">
+      <h2>¿Cuál es tu nombre</h2>
+      <input type="text" name="validarNombre" value="" id="txt">
+    </form>
+
+    <div class="botonReady">
+      <button type="button" onclick="validarNombre();" name="button">READY</button>
+    </div>
+  </section>
+
+  <!--CATEGORIAS-->
+
+  <section id="sectionCategory">
+
+      <div id="introName"class="title">
+        <h1>Hi! <span id="nombreUsuario"></span></h1>
+        <p>¿Cón qué quieres comenzar?</p>
+      </div>
+
+      <!--CAJA CATEGORIA ANIMALES-->
+      <div class="boxAnimals">
+          <h1>ANIMALS</h1>
+          <img src="img/animalesDibujo.png" alt="">
+        <div>
+          <button type="button" name="button" onClick="visualizaCategoria('animals')">START</button>
+        </div>
+      </div>
+
+      <!--CAJA CATEGORIA FAMILIA-->
+      <div class="boxFamily">
+        <h1>FAMILY</h1>
+        <img src="img/familiaDibujo.png" alt="">
+        <div>
+          <button type="button" name="button" onClick="visualizaCategoria('family')">START</button>
+        </div>
+      </div>
+  </section>
+
+  <!--PREGUNTAS-->
+  <section id="preguntas">
+
+    <!--PREGUNTA 1-->
+    <section id="preguntaAnimals">
+      <form class="formAnimals">
+      <div class="box">
+
+        <div class="titleCategoria"></div>
+        <h2>1.¿cómo se escribe "pato" en inglés?</h2>
+          <!--ALTERNATIVAS1-->
+          <div class="a">
+            <input type="radio" name="duck" value="chicken">
+            <label for="">chicken</label>
+          </div>
+
+          <!--ALTERNATIVAS2-->
+          <div class="a">
+            <input  type="radio" name="duck" value="pig">
+            <label for="">pig</label>
+          </div>
+
+          <!--ALTERNATIVAS3-->
+          <div class="a">
+            <input id="respuestaCorrecta1" type="radio" name="duck" value="duck">
+            <label for="">duck</label>
+          </div>
+
+          <!--ALTERNATIVAS3-->
+          <div class="">
+            <input type="radio" name="duck" value="dog">
+            <label for="">dog</label>
+          </div>
+
+      <!--PREGUNTA 2-->
+
+        <div class="box">
+
+          <div class="titleCategoria"></div>
+          <h2>2.¿cómo se escribe "gato" en inglés?</h2>
+
+            <!--ALTERNATIVAS2-->
+            <div class="">
+              <input type="radio" name="gato" value="miau">
+              <label for="">miau</label>
+            </div>
+
+            <!--ALTERNATIVAS2-->
+            <div class="">
+              <input type="radio" name="gato" value="can">
+              <label for="">can</label>
+            </div>
+
+            <!--ALTERNATIVAS3-->
+            <div class="">
+              <input type="radio" name="gato" value="gat">
+              <label for="">gat</label>
+            </div>
+
+            <!--ALTERNATIVAS3-->
+            <div class="">
+              <input id="respuestaCorrecta2" type="radio" name="gato" value="cat">
+              <label for="">cat</label>
+            </div>
+
+            <!--BOTON NEXT-->
+            <button onclick="finalResults('animals')" type="button" name="button">VER RESULTADO</button>
+
+        </div>
+        </form>
+
+      </section>
+
+      <!--PREGUNTA 3-->
+      <section id="preguntaFamily">
+        <div class="box">
+
+          <div class="titleCategoria"></div>
+          <h2>3.¿cómo se escribe "abuela" en inglés?</h2>
+          <form class="formAbuela" action="index.html" method="post">
+
+            <!--ALTERNATIVAS1-->
+            <div class="">
+              <input type="radio" name="mother" value="mother">
+              <label for="">mother</label>
+            </div>
+
+            <!--ALTERNATIVAS2-->
+            <div class="">
+              <input type="radio" name="grandmader" value="grandmader">
+              <label for="">grandmader</label>
+            </div>
+
+            <!--ALTERNATIVAS3-->
+            <div class="">
+              <input type="radio" name="abuel" value="abuel">
+              <label for="">abuel</label>
+            </div>
+
+            <!--ALTERNATIVAS3-->
+            <div class="">
+              <input id="respuestaCorrecta3" type="radio" name="grandmother" value="grandmother">
+              <label for="">grandmother</label>
+            </div>
+
+
+          </form>
+
+
+        <!--PREGUNTA 4-->
+
+            <div class="titleCategoria"></div>
+            <h2>4.¿cómo se escribe "primo" en inglés?</h2>
+            <form class="formPrimo" action="index.html" method="post">
+
+              <!--ALTERNATIVAS1-->
+              <div class="">
+                <input id="respuestaCorrecta4" type="radio" name="cousing" value="cousing">
+                <label for="">cousing</label>
+              </div>
+
+              <!--ALTERNATIVAS2-->
+              <div class="">
+                <input type="radio" name="bride" value="bride">
+                <label for="">bride</label>
+              </div>
+
+              <!--ALTERNATIVAS3-->
+              <div class="">
+                <input type="radio" name="young" value="young">
+                <label for="">young</label>
+              </div>
+
+              <!--ALTERNATIVAS3-->
+              <div class="">
+                <input type="radio" name="brother" value="brother">
+                <label for="">brother</label>
+              </div>
+
+              <!--BOTON NEXT-->
+              <button onclick="finalResults('family')" type="button" name="button">VER RESULTADO</button>
+
+            </form>
+          </section>
+        </section>
+
+
+        <!--RESULTADOS-->
+        <section id="resultados">
+            <div class="titleCategoria">
+              <br>
+              <h2>RESPUESTAS CORRECTAS</h2>
+              <p><span id='respuestaCorrecta'></span> de 2</p>
+              <br>
+              <h2>RESPUESTAS INCORRECTOS</h2>
+              <p><span id='respuestaIncorrecta'></span> de 2</p>
+              <br>
+              <button onclick="jugarOtraVez()" type="button" name="button">EMPECEMOS DE NUEVO</button>
+            </div>
+        </section>
+
+        <script type="text/javascript" src="app.js"></script>
+
+      </body>
+
+      </html>
